@@ -1,0 +1,77 @@
+#card_tshape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2vw;
+}
+
+#stats_wrapper {
+  position: relative;
+  align-self: center;
+  bottom: 1vh;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.divider {
+  background-color: azure;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 0.1vh;
+}
+
+.area {
+  display: initial;
+  font-family: 'AnonymusPro';
+}
+.area_name {
+  max-height: fit-content;
+  text-align: center;
+  color: white;
+}
+
+.barContainer {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#design_frontend, #design_backend, #teamwork, #coding {
+  height: 100%;
+  width: fit-content;
+}
+
+.skillbar {
+  max-height: 95%;
+  width: 1.5vw;
+  border-radius: 2vh;
+  margin-left: 1.25vw;
+  margin-right: 1.25vw;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 3vh;
+}
+.skillbar p {
+  font-size: 1.3vh;
+  text-align: left;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  min-width: 40vh;
+  max-width: 40vh;
+  margin: 0;
+  margin-bottom: 17.5vh;
+}
+.darkfont {
+  font-family: 'CourierPrime-Bold';
+  color: black;
+}
+.lightfont {
+  color: rgb(181, 192, 192);
+  font-family: 'CourierPrime-Regular';
+}

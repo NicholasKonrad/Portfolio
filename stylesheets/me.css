@@ -1,0 +1,111 @@
+#card_me {
+  margin-left: 20vw;
+}
+
+#me_flexContainer {
+  width: 90%;
+  max-width: 90%;
+  margin-left: 7.5%;
+  height: 90%;
+  margin-top: 3.5%;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcoming {
+  font-size: 30pt;
+  font-family: 'AnonymusPro';
+  line-height: 0pt;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#me_contentContainer {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#curriculum {
+  min-width: 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline {
+  background-color: azure;
+  width: 1%;
+  margin-left: 10%;
+}
+
+#timeline_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+}
+
+#timeline_content span {
+  display: block;
+}
+
+#timeline_content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12pt;
+}
+#timeline_content span p {
+  font-family: 'AnonymusPro';
+}
+
+#rightblock {
+  min-width: 80%;
+  max-width: 80%;
+}
+
+#topics {
+  min-height: 70%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#topics p {
+  font-family: 'AnonymusPro';
+}
+
+.row {
+  min-height: 20%;
+  max-height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+#portrait {
+  height: 100%;
+  width: auto;
+  border-style: solid;
+}
+
+.me_sectiontitle {
+  font-size: 14pt;
+  margin-bottom: 5pt;
+  margin-top: 0;
+  font-family: 'CourierPrime-Bold';
+}
+
+#languages :not(.me_sectiontitle) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'AnonymusPro';
+}
