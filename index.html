@@ -26,352 +26,318 @@
             <div id="line"></div>
             <nav>
                 <div tabindex="0" onclick="scrollToSection(0)" class="navelem">Me As A Person</div>
-                <div tabindex="1" onclick="scrollToSection(1)" class="navelem">Field Of Activity</div>
-                <div tabindex="2" onclick="scrollToSection(2)" class="navelem">Selected Projects</div>
+                <div tabindex="1" onclick="scrollToSection(1)" class="navelem">My Experience</div>
+                <div tabindex="2" onclick="scrollToSection(2)" class="navelem">Projects Preview</div>
             </nav>
         </div>
     </header>
     
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
     <main id="cardsContainer">
         <section id="card_me" class="card">
-            <div id="me_flexContainer">
-                <div id="me_contentContainer">
-                    <span id="curriculum">
-                        <div id="timeline_content">
-                            <p class="me_sectiontitle">Curriculum Vitae</p>
-                            <span>
-                                <p>Elementary School<br>2005</p>
-                                <div class="timeline" style="height: 12vh;"></div>
-                                <p>2009</p>
-                            </span>
-                            <span>
-                                <p>Highschool A-Level<br>incl. IT internship<br>2009</p>
-                                <div class="timeline" style="height: 20vh;"></div>
-                                <p>2017</p>
-                            </span>
-                            <span>
-                                <p>College<br>2018</p>
-                                <div class="timeline" style="height: 10vh;"></div>
-                                <p>2021</p>
-                            </span>
-                        </div>
-                        <!-- <div class="timeline" style="height: 100%;"></div> -->
+            <div style="display: block;">
+                <span id="curriculum">
+                    <span style="width: 25%;">
+                        <p>Elementary School<br>2005 - 2009</p>
+                        <div class="timeline"></div>
                     </span>
-                    <span id="rightblock">
-                        <span class="row">
-                            <div id="welcoming">
-                                <h1>Welcome to </h1>
-                                <h1>my Portfolio</h1>
-                            </div>
-                            <div id="languages">
-                                    <p class="me_sectiontitle">I speak</p> 
-                                    <p>Native German</p>
-                                    <p>Professional English</p>
-                                    <p>Basic Spanish</p>
-                                    <p>[Latin]</p>
-                            </div>
-                            <img src="./assets/portrait.jpg" id="portrait" alt="A picture of me">
-                        </span>
-                        <span id="topics">
-                            <div>
-                                <span class="me_sectiontitle">What I offer</span>
-                                <p>
-                                    Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up he it enjoyment agreeable depending. Timed voice share led his widen noisy young. On weddings believed laughing although material do exercise of. Up attempt offered ye civilly so sitting to. She new course get living within elinor joy. She her rapturous suffering concealed. 
-                                </p>
-                            </div>
-                            <div id="futurevision">
-                                <span class="me_sectiontitle">What I want</span>
-                                <p>
-                                    Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up he it enjoyment agreeable depending. Timed voice share led his widen noisy young. On weddings believed laughing although material do exercise of. Up attempt offered ye civilly so sitting to. She new course get living within elinor joy. She her rapturous suffering concealed. 
-                                </p>
-                            </div>
-                            <div>
-                                <span class="me_sectiontitle">What I aspire to become</span>
-                                <p>
-                                    Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up he it enjoyment agreeable depending. Timed voice share led his widen noisy young. On weddings believed laughing although material do exercise of. Up attempt offered ye civilly so sitting to. She new course get living within elinor joy. She her rapturous suffering concealed. 
-                                </p>
-                            </div>
-                        </span>
+                    <span style="width: 52%;">
+                        <p>Highschool A-Level incl. IT internship<br>2009 - 2017</p>
+                        <div class="timeline"></div>
                     </span>
-                </div>
-            </div>            
+                    <span style="width: 20%;">
+                        <p>College<br>2018 - 2021</p>
+                        <div class="timeline"></div>
+                    </span>
+                </span>
+                <span id="row">
+                    <div>
+                        <span class="me_sectiontitle">What I offer</span>
+                        <p>     
+                            My set of knowledge and abilites create a spectrum that ranges from interaction, interface, 
+                            &    concept design over management techniques to technical implementation.
+                            For coding I have so far used JS, HTML, CSS and am willing to learn new languages 
+                            and frameworks. <br>
+                            Even though I so far had to focus on coding I am also very active when it comes to developing 
+                            concepts and designing the interaction between the user and other entities. 
+                            My specialisation in the intersection of those realms is what makes me 
+                            valuable when working with and creating novel media.
+                            I like to structure things and with good logical thinking I see my role 
+                            in the team as someone who can integrate methodology in the creative 
+                            workflow and can moderate discussions team-internally and with stakeholdes.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="me_sectiontitle">What I aspire to become</span>
+                        <p>
+                            Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up he it enjoyment agreeable depending. Timed voice share led his widen noisy young. On weddings believed laughing although material do exercise of. Up attempt offered ye civilly so sitting to. She new course get living within elinor joy. She her rapturous suffering concealed. 
+                        </p>
+                    </div>
+                    <img src="./assets/portrait_edit.png" id="portrait" alt="A picture of me">
+                </span>    
+            </div>       
         </section>
         <a id="anchor_me" class="card_anchor"></a>
         <section  id="card_tshape" class="card">
             <div id="stats_wrapper">
-                <div class="skillbar lightfont" id="architecture"><p>architecture</p></div>
-                <span id="design_frontend" class="area">
-                    <div class="barContainer">
-                        <div class="skillbar darkfont" id="sound"><p>Sound Design</p></div>
-                        <div class="skillbar darkfont" id="animation"><p>Animation</p></div>
-                        <div class="skillbar darkfont" id="_3d"><p>3D Modeling & Shading</p></div>
-                        <div class="skillbar darkfont" id="video"><p>Video Creation</p></div>
-                        <div class="skillbar darkfont" id="graphics"><p>Graphical Design</p></div>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="area_name">Design</p>
-                </span>
-                <span id="design_backend" class="area">
-                    <div class="barContainer">
-                        <div class="skillbar darkfont" id="ux"><p>User Experience Design</p></div>
-                        <div class="skillbar darkfont" id="methodics"><p>Methodical Approaches in Design</p></div>
-                        <div class="skillbar darkfont" id="concepts"><p>Conceptual Design</p></div>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="area_name">Concepts</p>
-                </span>
-                <span id="teamwork" class="area">
-                    <div class="barContainer">
-                        <div class="skillbar darkfont" id="management"><p>Project & Team Management</p></div>
-                        <div class="skillbar darkfont" id="writing"><p>Text based Communication</p></div>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="area_name">Teamworking</p>
-                </span>
-                <span id="coding" class="area">
-                    <div class="barContainer">
-                        <div class="skillbar darkfont" id="coding_frontend"><p>Frontend Coding</p></div>
-                        <div class="skillbar darkfont" id="coding_backend"><p>Backend Coding</p></div>
-                        <div class="skillbar lightfont" id="algorithmic"><p>Algorithmic</p></div>
-                        <div class="skillbar lightfont" id="pyhsical_computing"><p>Physical Computing</p></div>
-                        <div class="skillbar lightfont" id="machine_learning"><p>Machine Learning</p></div>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="area_name">Coding</p>
-                </span>
-                <div class="skillbar lightfont" id="psychology"><p>Psychology</p></div>
-            </div>
-        </section>
-        <a id="anchor_tshape" class="card_anchor"></a>
-        <section id="card_projects" class="card">
-            <div id="projects_contentContainer">
-                <nav>
-                    <div class="navelem" onclick="displayProject(0)" style="border-width: 1px">1. Semester</div>
-                    <div class="navelem" onclick="displayProject(1)">2. Semester</div>
-                    <div class="navelem" onclick="displayProject(2)">3. Semester</div>
-                    <div class="navelem" onclick="displayProject(3)">Competitions</div>
-                    <div class="navelem" onclick="displayProject(4)">Private</div>
-                </nav>
-                <div id="projectsnavline"></div>
-                <span class="projectsection">
-                    <p class="image-left" style="padding-top: 6%;">
-                        <span class="keyords">
-                            A Starting Point 
-                        </span>
-                        In our introductory semester of my undergraduate program we were 
-                        started with learning about what design is and came in touch with 
-                        it visually. <em>Interactive Media Design</em> is a project based program, 
-                        though the first semester was one of smaller scale. The given topic 
-                        for this semester was to design a food truck service. 
-                        My group created a tourist attraction that made it possible for 
-                        tourists to experience the city both in a way of sightseeing
-                            <img src="./assets/semester01-website-styleguide.png" 
-                            alt="Screenshot of my first Semester Project Website">
-                        and also in a way that allowed them to taste culinaric soul of the 
-                        city. 
-                        Out of that service we should then fashion a website and a 
-                        prototpe for an interface our guests inside the truck. Because we 
-                        distributed the work so that I was responsible for the creation 
-                        of the website in HTML and CSS I will be focusing on this part of the project.
-                        If I had to choose now, my interest in developing the interface would be a lot 
-                        greater than creating another website.
+                <div class="skillbar lightfont" id="architecture"><p>Architecture</p></div>
+            <span id="design_frontend" class="area">
+                <div class="barContainer">
+                    <div class="skillbar darkfont" id="sound"><p>Sound Design</p></div>
+                    <div class="skillbar darkfont" id="animation"><p>Animation</p></div>
+                    <div class="skillbar darkfont" id="_3d"><p>3D Modeling & Shading</p></div>
+                    <div class="skillbar darkfont" id="video"><p>Video Creation</p></div>
+                    <div class="skillbar darkfont" id="graphics"><p>Graphical Design</p></div>
+                </div>
+                <div class="divider"></div>
+                <p class="area_name">Design</p>
+            </span>
+            <span id="design_backend" class="area">
+                <div class="barContainer">
+                    <div class="skillbar darkfont" id="ux"><p>User Experience Design</p></div>
+                    <div class="skillbar darkfont" id="methodics"><p>Methodical Approaches in Design</p></div>
+                    <div class="skillbar darkfont" id="concepts"><p>Conceptual Design</p></div>
+                </div>
+                <div class="divider"></div>
+                <p class="area_name">Concepts</p>
+            </span>
+            <span id="teamwork" class="area">
+                <div class="barContainer">
+                    <div class="skillbar darkfont" id="management"><p>Project & Team Management</p></div>
+                    <div class="skillbar darkfont" id="writing"><p>Text based Communication</p></div>
+                </div>
+                <div class="divider"></div>
+                <p class="area_name">Teamworking</p>
+            </span>
+            <span id="coding" class="area">
+                <div class="barContainer">
+                    <div class="skillbar darkfont" id="coding_frontend"><p>Frontend Coding</p></div>
+                    <div class="skillbar darkfont" id="coding_backend"><p>Backend Coding</p></div>
+                    <div class="skillbar lightfont" id="algorithmic"><p>Algorithmic</p></div>
+                    <div class="skillbar lightfont" id="pyhsical_computing"><p>Physical Computing</p></div>
+                    <div class="skillbar lightfont" id="machine_learning"><p>Machine Learning</p></div>
+                </div>
+                <div class="divider"></div>
+                <p class="area_name">Coding</p>
+            </span>
+            <div class="skillbar lightfont" id="psychology"><p>Psychology</p></div>
+        </div>
+    </section>
+    <a id="anchor_tshape" class="card_anchor"></a>
+    <section id="card_projects" class="card">
+        <div id="projects_contentContainer">
+            <nav>
+                <div class="navelem" onclick="displayProject(0)" style="border-width: 1px">1. Semester</div>
+                <div class="navelem" onclick="displayProject(1)">2. Semester</div>
+                <div class="navelem" onclick="displayProject(2)">3. Semester</div>
+                <div class="navelem" onclick="displayProject(3)">Competitions</div>
+                <div class="navelem" onclick="displayProject(4)">Private</div>
+            </nav>
+            <div id="projectsnavline"></div>
+            <span class="projectsection">
+                <p class="image-left" style="padding-top: 6%;">
+                    <span class="keyords">
+                        A Starting Point 
+                    </span>
+                    In our introductory semester of my undergraduate program we were 
+                    started with learning about what design is and came in touch with 
+                    it visually. <em>Interactive Media Design</em> is a project based program, 
+                    though the first semester was one of smaller scale. The given topic 
+                    for this semester was to design a food truck service. 
+                    My group created a tourist attraction that made it possible for 
+                    tourists to experience the city both in a way of sightseeing
+                    <img src="./assets/semester01-website-styleguide.png" 
+                    alt="Screenshot of my first Semester Project Website">
+                    and also in a way that allowed them to taste culinaric soul of the 
+                    city. 
+                    Out of that service we should then fashion a website and a 
+                    prototpe for an interface our guests inside the truck. Because we 
+                    distributed the work so that I was responsible for the creation 
+                    of the website in HTML and CSS I will be focusing on this part of the project.
+                    If I had to choose now, my interest in developing the interface would be a lot 
+                    greater than creating another website.
+                </p>
+                <!-- <p class="image-right">
+                    <span class="keyords">
+                        Designing the Website 
+                    </span>
+                    The website was designed to emphasize the feeling of being in 
+                    a big city. 
+                    Those tend to cause too much stimuli rushing through people
+                    so we tried to combine said feeling with a rather clean look so that
+                    the user can concentrate on the interface's features.
+                    To accentuate our service in this interface we built a horizontal 
+                    <img src="./assets/semester01-screenshot-styleguide.png" 
+                    alt="Screenshot of my first Semester Project Styleguide">
+                    scroll for the navigation. While manual scrolling was disabled you 
+                    could click on the navigation points to let the website smoothly 
+                    scroll to desired section of the website. 
+                    This was more of a symbolic decision to enhance the user experience
+                    when navigating: 
+                    Scrolling alongside the skyline to get from one point of the website 
+                    to another one is to imitate the same movement through the 
+                    city that the user would enjoy when they are taking the ride 
+                    we provide as our service. 
+                </p> -->
+                <!-- <p class="image-left">
+                    <span class="keyords">
+                        Giving It A Look
+                    </span>
+                    The colors we used are incredibly bright and striking which 
+                    was thought to transfer the feeling of excitement. 
+                    While I still find these colors to be effective in that matter, 
+                    I also think that for others it might rather seem like 
+                    aggressive advertisement than a welcoming interface.
+                    <img src="./assets/semester01_screenshot_styleguide.png" 
+                    alt="Screenshot of my first Semester Project Website">
+                </p> -->
+                <!-- <p class="image-left">
+                    <span class="keyords">
+                        Changes Please
+                    </span>
+                    There are quite a lot of things that I'd like to change.
+                    Looking at it now, a makeover of the spacing properties between elements 
+                    like the logo and the canvas borders would be adeuqate.    
+                    Also I would definitely redesign the navigation 
+                    bar since it blocks the upward rising flow from the buildings. 
+                    A better way to sovle this issue would be by assimilating it 
+                    <img src="./assets/semester01-website-team.png"
+                    alt="Screenshot of my first Semester Project Team Site">
+                    to the background by giving it a vertical order.
+                    The same blocking behavior also appears through the gradient effect at the 
+                    very top of the site from black downwards to transparent.
+                    Though it is pretty subtle it is still contrahery to the flow of the buildings.
+                    But there are also smaller things like the  sharp contrast between 
+                    the cirular cropped profile pictures and the profile description blocks 
+                    with its unnessecary italics.
+                </p>   -->
+                <p class="image-right">
+                    <span class="keyords">
+                        Game Programming
+                    </span>
+                    <!-- early OOP -->
+                    For our subject <em>Creative Coding</em> I developed a game. The available 
+                    options were classics like Pong, Snake or a self-designed game. My professor
+                    advised that self-designed games suited students more advanced so I was keen 
+                    on giving it a try. Based on the animated TV-show <em>Rick and Morty</em> I
+                    <img src="./assets/semester01-game-level01.png"
+                    alt="Screenshot of my first Semester Game">
+                    created a browser bassed platforming game starring the show's two main characters with common and 
+                    unique abilities. I also added items and enemies. You can check out and play 
+                    the result <a href="https://nicholaskonrad.github.io/IMD1_Game/index.html" target="blank">here</a>.
+                    While we only covered the basics of HTML, CSS and JavaScript (variables, if-statements, loops and arrays)  
+                    I digged into object orientated programming 
+                    and designed my code accordingly. I therefore learned approximately half of the second semester 
+                    of coding within the first one. Since it's caused good resonance from both common students
+                    and my professor I was keen on diving into coding.
+                </p>
+            </span>
+            <span class="projectsection">
+                <p class="image-left" style="padding-top: 6%;">
+                    <span class="keyords">
+                        Experimental Design 
+                    </span>
+                    was the topic for our second semester. Based on that we should develop a 
+                    simulation. We decided to make a piece of media that shows users how their 
+                    actions influences their environment. Since climate changes is a hot topic
+                    we saw great relevance in it. We used the opportunity of experimental design 
+                    <img src="./assets/semester02-simulation.png" 
+                    alt="Screenshot of my second Semester simulation">
+                    to take a gamificated approach. With the right combination of storytelling
+                    and gamification we created a story of a traveling family. The user
+                    can take various actions that cause different outcomes at the end of the 
+                    simulation. We very subtly tried to bring in options of littering so that  
+                    Once the simulation was played through the user saw a fast-forward to a few 
+                    years later when the family came to the same travel destination where the 
+                    environmental changes had become visible. We then showed tips on how to improve
+                    the users decision-making in terms of environmental awareness.
+                </p>
+                <p class="image-right">
+                    <span class="keyords">
+                        Machine Learning
+                    </span>
+                    A former student from the <em>MIT</em> came to our campus to teach us how to
+                    <em>create rich user experiences with applied machine learning</em>. While I've 
+                    had red about the principles of neural networks before I had never before been 
+                    in touch with the actual developement of a working model. Unfortunately our 
+                    <img src="./assets/semester02"
+                    alt="Screenshot of my first machine learning result">
+                    professor could not supervise our projects that much when we were in the hands-on 
+                    phase of this course. 
+                    By reading articles and following tutorials I finally was able to
+                    create a neural network that allowed you to capture footage through your webcam
+                    and then transfer it into a specific artstyle in a live manner.
+                    This was also the first time I came in touch with Python and libraries which
+                    made it surprisingly hard for me to archieve my goals. Even though it was a 
+                    tough way to the finish line I am still interested in learning more about 
+                    artificial intelligence.
+                </p> 
+                <!-- <p class="image-left">
+                    <span class="keyords">
+                        Introduction To Filmmaking
+                    </span>
+                    To present our projects in a more fascinating way we also approached video
+                    creation so we produced a trailer that should explain the relevance of the 
+                    topic we were dealinng with and our solution for the problem. For this to
+                    work we were in contact with a professor from the <em>Motion Pictures</em> 
+                    Program.
+                    <img src="./assets/semester02-trailer.png" 
+                    alt="Screenshot of my first Semester Project Website">
+                    Unfortunately it did not turn out as well as we planned because we had to 
+                    shoot our footage somewhere similiar to a beach The best location we could 
+                    find was not very convincing and made it hard for us to get the right lightfont
+                    conditions. Additionally, we were filming with a child which made it even harder 
+                    to get the wanted result. While I was very unhappy with the final outcome due to 
+                    those reasons, the concept for our trailer received approval. 
+                </p>   -->
+            </span>
+            <span class="projectsection">
+                <p class="image-left" style="padding-top: 6%;">
+                    <span class="keyords">
+                        Science & Methodology   
+                    </span>
+                    <img src="./assets/semester03-methodic-01.JPG" 
+                    alt="Photo of my third semester methodical work">
+                    
+                </p> 
+                <p class="image-left">
+                    <span class="keyords">
+                        Physical Computing
+                    </span>
+                    
+                    <img src="./assets/semester03-physical-01.jpg" 
+                    alt="Photo of my third semester project physical prototype">
+                    
+                </p>
+            </span>
+            <span class="projectsection">
+                <p class="image-left" style="padding-top: 6%;">
+                    <span class="keyords">
+                        Reply Creative Challenge 
+                    </span>
+                    
+                        <img src="./assets/challenges-replyCreativeChallenge.png" 
+                        alt="Replay createive challenge banner">
+                        
                     </p>
                     <p class="image-right">
-                        <span class="keyords">
-                            Designing the Website 
-                        </span>
-                         The website was designed to emphasize the feeling of being in 
-                        a big city. 
-                        Those tend to cause too much stimuli rushing through people
-                        so we tried to combine said feeling with a rather clean look so that
-                        the user can concentrate on the interface's features.
-                        To accentuate our service in this interface we built a horizontal 
-                            <img src="./assets/semester01-screenshot-styleguide.png" 
-                            alt="Screenshot of my first Semester Project Styleguide">
-                        scroll for the navigation. While manual scrolling was disabled you 
-                        could click on the navigation points to let the website smoothly 
-                        scroll to desired section of the website. 
-                        This was more of a symbolic decision to enhance the user experience
-                        when navigating: 
-                        Scrolling alongside the skyline to get from one point of the website 
-                        to another one is to imitate the same movement through the 
-                        city that the user would enjoy when they are taking the ride 
-                        we provide as our service. 
-                    </p>
-                    <!-- <p class="image-left">
-                        <span class="keyords">
-                            Giving It A Look
-                        </span>
-                        The colors we used are incredibly bright and striking which 
-                        was thought to transfer the feeling of excitement. 
-                        While I still find these colors to be effective in that matter, 
-                        I also think that for others it might rather seem like 
-                        aggressive advertisement than a welcoming interface.
-                            <img src="./assets/semester01_screenshot_styleguide.png" 
-                            alt="Screenshot of my first Semester Project Website">
-                    </p> -->
-                    <p class="image-left">
-                        <span class="keyords">
-                            Changes Please
-                        </span>
-                        There are quite a lot of things that I'd like to change.
-                        Looking at it now, a makeover of the spacing properties between elements 
-                        like the logo and the canvas borders would be adeuqate.    
-                        Also I would definitely redesign the navigation 
-                        bar since it blocks the upward rising flow from the buildings. 
-                        A better way to sovle this issue would be by assimilating it 
-                            <img src="./assets/semester01-website-team.png"
-                            alt="Screenshot of my first Semester Project Team Site">
-                        to the background by giving it a vertical order.
-                        The same blocking behavior also appears through the gradient effect at the 
-                        very top of the site from black downwards to transparent.
-                        Though it is pretty subtle it is still contrahery to the flow of the buildings.
-                        But there are also smaller things like the  sharp contrast between 
-                        the cirular cropped profile pictures and the profile description blocks 
-                        with its unnessecary italics.
-                    </p>  
-                    <p class="image-right" style="margin-bottom: 6%;">
-                        <span class="keyords">
-                            Game Programming
-                        </span>
-                        For our subject <em>Creative Coding</em> I developed a game. The available 
-                        options were classics like Pong, Snake or a self-designed game. Altough my professor
-                        advised that self-designed games would fit for students more advanced I 
-                        decided to go for it. Based on the animated TV-show <em>Rick and Morty</em> I
-                        <img src="./assets/semester01-game-level01.png"
-                        alt="Screenshot of my first Semester Game">
-                        created a browser bassed platforming game starring the show's two main characters with common and 
-                        unique abilities. I also added items and enemies. You can check out and play the result <a href="">here</a>.
-                        While we only covered the basics of HTML, CSS and JavaScript (variables, if-statements, loops and arrays)  
-                        I digged into object orientated programming 
-                        and designed my code accordingly. I therefore learned approximately half of the second semester 
-                        of coding within the first one. Since it's caused good resonance from both common students
-                        and my professor I was keen on diving into coding.
-                    </p>
-                </span>
-                <span class="projectsection">
-                    <p class="image-left">
-                        <span class="keyords">
-                            Experimental Design 
-                        </span>
-                        was the topic for our second semester. Based on that we should develop a 
-                        simulation. We decided to make a piece of media that shows users how their 
-                        actions influences their environment. Since climate changes is a hot topic
-                        we saw great relevance in it. We used the opportunity of experimental design 
-                            <img src="./assets/semester02-simulation.png" 
-                            alt="Screenshot of my second Semester simulation">
-                        to take a gamificated approach. With the right combination of storytelling
-                        and gamification we created a story of a traveling family. The user
-                        can take various actions that cause different outcomes at the end of the 
-                        simulation. We very subtly tried to bring in options of littering so that  
-                        Once the simulation was played through the user saw a fast-forward to a few 
-                        years later when the family came to the same travel destination where the 
-                        environmental changes had become visible. We then showed tips on how to improve
-                        the users decision-making in terms of environmental awareness.
-                    </p>
-                    <p class="image-right">
-                        <span class="keyords">
-                            Machine Learning
-                        </span>
-                        A former student from the <em>MIT</em> came to our campus to teach us how to
-                        <em>create rich user experiences with applied machine learning</em>. While I've 
-                        had red about the principles of neural networks before I had never before been 
-                        in touch with the actual developement of a working model. Unfortunately our 
-                            <img src="./assets/semester02"
-                            alt="Screenshot of my first machine learning result">
-                        professor could not supervise our projects that much when we were in the hands-on 
-                        phase of this course. 
-                        By reading articles and following tutorials I finally was able to
-                        create a neural network that allowed you to capture footage through your webcam
-                        and then transfer it onto a specific artstyle in a live manner.
-                        This was also the first time I came in touch with Python and libraries which
-                        made it surprisingly hard for me to archieve my goals. Even though it was a 
-                        tough way to the finish line I am still interested in learning more about 
-                        artificial intelligence.
-                    </p> 
-                    <p class="image-left">
-                        <span class="keyords">
-                            Introduction To Filmmaking
-                        </span>
-                        To present our projects in a more fascinating way we also approached video
-                        creation so we produced a trailer that should explain the relevance of the 
-                        topic we were dealinng with and our solution for the problem. For this to
-                        work we were in contact with a professor from the <em>Motion Pictures</em> 
-                        Program.
-                            <img src="./assets/semester02-trailer.png" 
-                            alt="Screenshot of my first Semester Project Website">
-                        Unfortunately it did not turn out as well as we planned because we had to 
-                        shoot our footage somewhere similiar to a beach The best location we could 
-                        find was not very convincing and made it hard for us to get the right lightfont
-                        conditions. Additionally, we were filming with a child which made it even harder 
-                        to get the wanted result. While I was very unhappy with the final outcome due to 
-                        those reasons, the concept for our trailer received approval. 
-                    </p>  
-                </span>
-                <span class="projectsection">
-                    <p class="image-left">
-                        <span class="keyords">
-                            Science & Methodology   
-                        </span>
-                        
-                            <img src="./assets/semester03-science.png"
-                            alt="Screenshot of my third semester research paper">
-                        
-                    </p> 
-                    <p class="image-right" style="padding-top: 6%;">
-                        <span class="keyords">
-                            Preventing Roadkills 
-                        </span>
-                        
-                            <img src="./assets/semester03-methodic-01.JPG" 
-                            alt="Photo of my third semester methodical work">
-                        
-                    </p>
-                    <p class="image-left">
-                        <span class="keyords">
-                            Physical Computing
-                        </span>
-                        
-                            <img src="./assets/semester03-physical-01.jpg" 
-                            alt="Photo of my third semester project physical prototype">
-                        
-                    </p>
-                    <p class="image-right">
-                        <span class="keyords">
-                            Introduction to Node.js
-                        </span>
-                        
-                            <img src="./assets/semester03-node.png"
-                            alt="Screenshot of my terminal while using node.js">
-                        
-                    </p>   
-                </span>
-                <span class="projectsection">
-                    <p class="image-left">
                         <span class="keyords">
                             ThingsCon Hack Challenge   
                         </span>
                         
-                            <img src="./assets/challenges-thingsCon.png"
-                            alt="ThingsCon logo">
+                        <img src="./assets/challenges-thingsCon.png"
+                        alt="ThingsCon logo">
                         
                     </p> 
-                    <p class="image-right" style="padding-top: 6%;">
-                        <span class="keyords">
-                            Reply Creative Challenge 
-                        </span>
-                        
-                            <img src="./assets/challenges-replyCreativeChallenge.png" 
-                            alt="Replay createive challenge banner">
-                        
-                    </p>
                     <p class="image-left">
                         <span class="keyords">
                             COVID Hackathon
                         </span>
                         
-                            <img src="./assets/challenges-coronaHackathon.jpg" 
-                            alt="Corona hackathon of the german government">
+                        <img src="./assets/challenges-coronaHackathon.jpg" 
+                        alt="Corona hackathon of the german government">
                         
                     </p>
                 </span>
@@ -379,7 +345,10 @@
         </section>
         <a id="anchor_projects" class="card_anchor"></a>
     </main>
-<script src="./scripts/scrollbehavior.js"></script>
-<script src="./scripts/keyboardControl.js"></script>
-</body>
-</html>
+
+    <script src="./scripts/scrollbehavior.js"></script>
+    <script src="./scripts/displayProject.js"></script>
+    <script src="./scripts/particles.js"></script>
+    <script src="./scripts/app.js"></script>
+    </body>
+    </html>

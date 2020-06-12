@@ -1,111 +1,89 @@
 #card_me {
   margin-left: 20vw;
-}
-
-#me_flexContainer {
-  width: 90%;
-  max-width: 90%;
-  margin-left: 7.5%;
-  height: 90%;
-  margin-top: 3.5%;
-  color: azure;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#welcoming {
-  font-size: 30pt;
-  font-family: 'AnonymusPro';
-  line-height: 0pt;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#me_contentContainer {
-  height: 80%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  color: azure;
 }
 
 #curriculum {
-  min-width: 20%;
-  max-width: 20%;
+  min-width: 100%;
+  max-width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+
+#curriculum span {
+  height: fit-content;
+}
+
+#curriculum span p {
+  font-family: 'CourierPrime-Bold';
+  padding-top: 6pt;
+  letter-spacing: 1pt;
+  margin: 0;
 }
 
 .timeline {
+  
   background-color: azure;
-  width: 1%;
-  margin-left: 10%;
-}
-
-#timeline_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  float: right;
-}
-
-#timeline_content span {
-  display: block;
-}
-
-#timeline_content p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 12pt;
-}
-#timeline_content span p {
-  font-family: 'AnonymusPro';
-}
-
-#rightblock {
-  min-width: 80%;
-  max-width: 80%;
-}
-
-#topics {
-  min-height: 70%;
-  max-height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#topics p {
-  font-family: 'AnonymusPro';
-}
-
-.row {
-  min-height: 20%;
-  max-height: 20%;
   width: 100%;
+  height: 3px;
+}
+
+#row {
+  min-height: 60%;
+  max-height: 60%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 10vh;
+}
+
+#row  p {
+  font-family: 'Aleo';
+  font-size: 12pt;
+  letter-spacing: 1pt;
+  line-height: 20pt;
+  width: 90%;
+  margin: 0 !important;
+  text-align: justify;
+}
+
+#profcol {
+  height: 100%;
+  width: 100%;
 }
 
 #portrait {
-  height: 100%;
-  width: auto;
-  border-style: solid;
+  width: 100%;
+  height: auto;
+  border-bottom: azure;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
 .me_sectiontitle {
-  font-size: 14pt;
-  margin-bottom: 5pt;
+  font-size: 22pt;
+  margin-bottom: 0;
   margin-top: 0;
   font-family: 'CourierPrime-Bold';
 }
 
-#languages :not(.me_sectiontitle) {
-  height: 100%;
+#languages {
+  min-height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: 'AnonymusPro';
+}
+
+#languages p:not(.me_sectiontitle) {
+  font-family: 'AnonymusPro';
+  font-size: 12pt;
+  margin: 0;
 }
