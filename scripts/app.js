@@ -1,6 +1,6 @@
 let varspeed = 0;
-// if (window.navigator.appName == ""
-console.log(window.navigator.userAgent);
+if (window.navigator.vendor == "Google Inc.") varspeed = 0.4;
+else varspeed = 0.6;
 
 particlesJS('particles-js',
     
@@ -60,7 +60,7 @@ particlesJS('particles-js',
     },
     "move": {
         "enable": true,
-        "speed": 0.4,
+        "speed": varspeed,
         "direction": "none",
         "random": false,
         "straight": false,
