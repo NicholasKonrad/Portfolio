@@ -23,22 +23,10 @@ body {top:0 ;
 @font-face {
   font-family: 'Cutive Mono'; 
   src: url('../assets/CutiveMono-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'JosefinSlab'; 
-  src: url('../assets/JosefinSlab-Regular.ttf') format('truetype');
-}
+}   
 @font-face {
   font-family: 'AnonymusPro'; 
   src: url('../assets/AnonymousPro-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'CourierPrime-Bold'; 
-  src: url('../assets/CourierPrime-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'CourierPrime-Regular'; 
-  src: url('../assets/CourierPrime-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Aleo'; 

@@ -67,12 +67,16 @@
   margin: 0;
   margin-bottom: 17.5vh;
   letter-spacing: 0.6pt;
+  /* letter-spacing: 0.1vh; */
+  font-weight: bold;
 }
 .darkfont {
-  font-family: 'CourierPrime-Bold';
+  /* font-family: 'CourierPrime-Bold'; */
+  font-family: 'AnonymusPro';
   color: black;
 }
 .lightfont {
-  color: rgb(181, 192, 192);
-  font-family: 'CourierPrime-Regular';
+  color: white;
+  /* font-family: 'CourierPrime-Regular'; */
+  font-family: 'AnonymusPro';
 }
