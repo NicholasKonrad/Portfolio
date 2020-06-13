@@ -64,8 +64,11 @@
 }
 
 #portrait {
+  display: initial;
   height: 100%;
   width: auto;
+}
+#portrait img {
   border-bottom: azure;
   border-bottom-style: solid;
   border-width: 1px;
