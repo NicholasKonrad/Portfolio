@@ -250,26 +250,28 @@ var pJS = function(tag_id, params){
     }
 
     /* position */
-    let edge = Math.floor(Math.random() * 5);
+    let edge = Math.floor(Math.random() * 3);
+    
     // if (!position) {
       switch (edge) {
-        //left border
         case 0:
-          this.x = Math.random() * (0.01 * pJS.canvas.w);
-          this.y = Math.random() * pJS.canvas.h;
+          if (Math.random() < 0.5) {
+            //left border
+            this.x = Math.random() * (0.01 * pJS.canvas.w);
+            this.y = Math.random() * pJS.canvas.h;
+          } else {
+          //left border
+            this.x = (Math.random() * (0.01 * pJS.canvas.w)) + (pJS.canvas.w * 0.99);
+            this.y = Math.random() * pJS.canvas.h;
+          }
           break;
-        //top border
         case 1:
-          this.x = Math.random() * pJS.canvas.w;
-          this.y = Math.random() * (0.01 * pJS.canvas.h);
+            //top border
+            this.x = Math.random() * pJS.canvas.w;
+            this.y = Math.random() * (0.01 * pJS.canvas.h);
           break;
         //right border
         case 2:
-          this.x = (Math.random() * (0.01 * pJS.canvas.w)) + (pJS.canvas.w * 0.99);
-          this.y = Math.random() * pJS.canvas.h;
-          break;
-        //bottom border
-        case 3:
           this.x = Math.random() * pJS.canvas.w;
           this.y = (Math.random() * (0.01 * pJS.canvas.h)) + (pJS.canvas.h * 0.99);
           break;
