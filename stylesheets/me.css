@@ -45,7 +45,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   #offer_aspire {
     flex-direction: column;
     overflow: scroll;

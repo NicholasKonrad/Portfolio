@@ -69,30 +69,6 @@
     font-weight: bold;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-    border-left: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(53, 51, 56); 
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: rgb(108, 104, 110); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(95, 64, 124); 
-}
-
 .image-left {
     width: 80%;
     margin-left: 17%;
