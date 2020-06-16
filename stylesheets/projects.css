@@ -50,10 +50,7 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.projectsection p a {
-    text-decoration: underline;
-    color: azure;
-}
+
 .projectsection p a:hover {
     text-transform: uppercase;
     color: azure;

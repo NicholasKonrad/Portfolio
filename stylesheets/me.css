@@ -45,15 +45,6 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-  #offer_aspire {
-    flex-direction: column;
-    overflow: scroll;
-  }
-  #offer_aspire div {
-    width: 95%;
-  }
-}
 
 #offer_aspire {
   display: inherit;
@@ -77,6 +68,19 @@
   margin-top: 12pt;
 }
 
+@media screen and (max-width: 1600px) {
+  #offer_aspire {
+    flex-direction: column;
+    overflow-y: scroll;
+    direction: rtl;
+    height: 40vh;
+  }
+  #offer_aspire div {
+    direction: ltr;
+    width: 98%;
+  }
+}
+
 .me_sectiontitle {
   font-size: 22pt;
   margin-top: 0;
@@ -86,6 +90,10 @@
 #contact {
   flex-direction: column;
   margin-left: 2%;
+}
+
+#contact a {
+  background-color: rgba(0,0,0,0);
 }
 
 #contact p {

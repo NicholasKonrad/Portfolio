@@ -2,6 +2,7 @@ const sections = document.getElementsByClassName('projectsection');
 const buttons = document.getElementById('card_projects').getElementsByClassName('navelem');
 
 function displayProject(v) { 
+    currentPosition = 2;
     for (let i = 0; i < sections.length; i++) {
         sections[i].style.display = 'none';
         buttons[i].style.borderWidth = '0px';

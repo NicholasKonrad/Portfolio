@@ -10,5 +10,10 @@ const options = {
 function scrollToSection(i) {
     anchors[i].scrollIntoView(options);
     currentPosition = i;
+    console.log('called');
+    
 }
 
+function refocus(v) {
+    scrollToSection(currentPosition);
+}

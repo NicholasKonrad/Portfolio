@@ -1570,7 +1570,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 };
 
-document.addEventListener("fullscreenchange", () => {
+function adjustParticles() {
   for (let v = 0; v < pJS.particles.array.length; v++) {
     pJS.canvas.w = window.innerWidth;
     pJS.canvas.h = window.innerHeight;
@@ -1579,5 +1579,4 @@ document.addEventListener("fullscreenchange", () => {
     pJS.particles.array[v].x = xpos_canvas_rate * window.innerWidth; 
     pJS.particles.array[v].y = ypos_canvas_rate * window.innerWidth; 
   }
-  location.reload();
-});
+}

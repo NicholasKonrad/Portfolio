@@ -131,3 +131,9 @@ body {top:0 ;
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(95, 64, 124); 
 }
+
+a, a:hover, a:visited, a:link, a:active {
+  color: azure;
+  background-color: rebeccapurple;
+  text-decoration: none;
+}

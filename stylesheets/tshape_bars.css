@@ -1,11 +1,11 @@
 
 #architecture {
-  height: 12%;
+  height: 14%;
   /* background-color: rgb(255, 38, 0); */
   box-shadow: 0 0 35px rgb(255, 17, 0);
 }
 #sound {
-  height: 14%;
+  height: 16%;
   /* background-color: rgb(255, 60, 0); */
   box-shadow: 0 0 35px rgb(255, 72, 0);
 }
@@ -80,7 +80,7 @@
   box-shadow: 0 0 35px rgb(111, 0, 255);
 }
 #psychology {
-  height: 10%;
+  height: 14%;
   /* background-color: rgb(140, 0, 255); */
   box-shadow: 0 0 35px rgb(153, 0, 255);
 }

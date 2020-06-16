@@ -69,14 +69,18 @@
   letter-spacing: 0.6pt;
   /* letter-spacing: 0.1vh; */
   font-weight: bold;
+  font-family: 'AnonymusPro';
 }
 .darkfont {
   /* font-family: 'CourierPrime-Bold'; */
-  font-family: 'AnonymusPro';
   color: black;
 }
 .lightfont {
   color: white;
   /* font-family: 'CourierPrime-Regular'; */
-  font-family: 'AnonymusPro';
+}
+@media screen and (max-width: 1440px) {
+  .skillbar p {
+    font-family: 'Aleo';
+  }
 }

@@ -15,7 +15,7 @@
     <title> NK | Portfolio by Nicholas Konrad </title>    
 </head>
 
-<body>
+<body onresize="refocus(); adjustParticles()">
     <header id="author">
         <div id="authorContent">
             <div id="namewrapper">
@@ -55,7 +55,7 @@
                     <div id="offer_aspire">
                         <div>
                             <span class="me_sectiontitle">What I offer</span>
-                            <p>     
+                            <p style="margin-bottom: 8vh;">     
                                 My set of knowledge and abilities create a spectrum that ranges from interaction, interface, 
                                 &    concept design over management techniques to technical implementation.
                                 For coding I have so far used JS, HTML, CSS and am willing to learn new languages 
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <span id="contact">
-                        <a href="mailto:" id="portrait">
+                        <a href="mailto:nicholas.konrad@mail.de" id="portrait">
                             <img src="./assets/portrait_edit.png" alt="A picture of me">
                         </a>
                         <p>Are we a match? Click me!</p>
@@ -151,7 +151,6 @@
                 <div class="navelem" onclick="displayProject(1)">2. Semester</div>
                 <div class="navelem" onclick="displayProject(2)">3. Semester</div>
                 <div class="navelem" onclick="displayProject(3)">Competitions</div>
-                <!-- <div class="navelem" onclick="displayProject(4)">Private</div> -->
             </nav>
             <div id="projectsnavline"></div>
             <span class="projectsection">
@@ -161,42 +160,33 @@
                     </span>
                     In our introductory semester of my undergraduate program we 
                     started with learning about what design is and came in touch with 
-                    it visually. <a href="https://imd.mediencampus.h-da.de/"><em>Interactive Media Design</em></a> is a project based program, 
+                    it visually. 
+                    <a target="blank" href="https://imd.mediencampus.h-da.de/">Interactive Media Design</a> 
+                    is a project based program, 
                     though the first semester was one of smaller scale. The given topic 
                     for this semester was to design a food truck service. 
+                    Out of that service we should then fashion a website and a 
                     <img src="./assets/semester01-website-styleguide.png" 
                     alt="Screenshot of my first Semester Project Website">
-                    My group created a tourist attraction that made it possible for 
-                    tourists to experience the city both in a way of sightseeing
-                    and also in a way that allowed them to taste culinary soul of the 
-                    city. 
-                    Out of that service we should then fashion a website and a 
                     prototype for an interface our guests would use inside the truck. 
                     We played around with color palettes, tried different layouts and
                     interaction methods until we agreed on the final outcome that we 
-                    then implemented. For that part I was responsible for the website.
-                    Since then, I often had to deal with more frontend development but 
-                    my interest has strongly shifted to more logic-orientated work 
-                    such as server-side programming.
+                    then implemented.
                 </p>
                     <p class="image-right">
                     <span class="keyords">
                         Game Programming
                     </span>
-                    For our subject <em>Creative Coding</em> I developed a game. The available 
-                    options were classics like Pong, Snake or a self-designed game. My professor
-                    advised that self-designed games suited students more advanced so I was keen 
-                    on giving it a try. Based on the animated TV-show <em>Rick and Morty</em> I
+                    For our subject <em>Creative Coding</em> I developed a game. Based on the animated TV-show <em>Rick and Morty</em> I
+                    created a browser based platforming game starring the show's two main characters with common and 
+                    unique abilities, items and enemies. You can check out and play 
+                    the result <a href="https://nicholaskonrad.github.io/IMD1_Game/index.html" target="blank">here</a>.
+                    Even though I retrospectively find the lack of UX comfortability troubling I recieved quite a lot of 
                     <img src="./assets/semester01-game-level01.png"
                     alt="Screenshot of my first Semester Game">
-                    created a browser based platforming game starring the show's two main characters with common and 
-                    unique abilities. I also added items and enemies. You can check out and play 
-                    the result <a href="https://nicholaskonrad.github.io/IMD1_Game/index.html" target="blank">here</a>.
-                    While we only covered the basics of HTML, CSS and JavaScript (variables, if-statements, loops and arrays)  
-                    I digged into object orientated programming 
-                    and designed my code accordingly. I therefore learned approximately half of the second semester 
-                    of coding within the first one. Since it's caused good resonance from both common students
-                    and my professor I was keen on diving into coding during the following semesters.
+                    very good feedback from both professors and students for the features I build. 
+                    This was largely achieved by teaching myself object oriented programming, which
+                    was planned to be the content of the second semester of coding class. 
                 </p>
             </span>
             <span class="projectsection">
@@ -204,16 +194,14 @@
                     <span class="keyords">
                         Experimental Design 
                     </span>
-                    was the topic for our second semester. Based on that we should develop a 
-                    simulation. Since climate changes is a hot topic
-                    we decided to make a piece of media that shows users how their 
-                    actions influences their environment. We used the opportunity of experimental design 
+                    With the right combination of storytelling
+                    and gamification we created a story of a traveling family where the user
+                    can take various actions that cause different outcomes at the end of the 
+                    simulation. It's purpose was to show the user how little mondane (partly subconscious) 
+                    decisions affected their environment in the long run.
                     <img src="./assets/semester02-simulation.png" 
                     alt="Screenshot of my second Semester simulation">
-                    to take a gamificated approach. With the right combination of storytelling
-                    and gamification we created a story of a traveling family. The user
-                    can take various actions that cause different outcomes at the end of the 
-                    simulation. We thought about where and how this project would be used to raise
+                    We thought about where and how this project would be used to raise
                     further environmental awareness. Additionally, in this semester we were busy
                     planning an exhibition called <em>interactive future [if]</em> where we were to 
                     present our projects, invite speakers and have meet and greets with various companies.
@@ -222,22 +210,20 @@
                     <span class="keyords">
                         Machine Learning
                     </span>
-                    An external professor came to our campus to teach how to
-                    <em>create rich user experiences with applied machine learning</em> 
-                    in an optional course. While I've 
+                    While I've 
                     had read about the principles of neural networks before I have not been 
-                    in touch with the actual developement of a working model. Unfortunately our 
+                    in touch with the actual developement of a working model. 
+                    This opional course was very tough for me but by reading articles and 
+                    following tutorials I finally was able to
+                    create a neural network that allowed you to capture footage through your webcam
                     <img src="./assets/semester02-machinelearning.png"
                     alt="Screenshot of my first machine learning result">
-                    professor could not supervise our projects that much when we were in the hands-on 
-                    phase of this course. 
-                    By reading articles and following tutorials I finally was able to
-                    create a neural network that allowed you to capture footage through your webcam
-                    and then transfer it into a specific art style in a live manner.
+                    and then transfer it into the style of 
+                    <a target="blank" href="https://www.das-perfekte-bild.de/august-macke-helles-haus.html">this painting</a> 
+                    in a live manner.
                     This was also the first time I came in touch with Python and libraries which
-                    made it surprisingly hard for me to achieve my goals. Even though it was a 
-                    tough way to the finish line and there are a few aspects about this project 
-                    that could be optimized I am still <strong>very</strong> interested 
+                    made it surprisingly hard for me to achieve my goals. I am still 
+                    <strong>very</strong> interested 
                     in learning more about artificial intelligence.
                 </p> 
             </span>
@@ -248,13 +234,12 @@
                     </span>
                     The third semester was so far the most important one in my academic career. 
                     It taught me not to depend on subjective perceptions when making decisions in 
-                    the design process. I was writing a research paper on whether automotive cars and 
-                    <img src="./assets/semester03-methodic-01.JPG" 
-                    alt="Photo of my third semester methodical work">
-                    e-cars will turn traffic to the better as an introduction to scientific design.
+                    the design process. I was writing a research paper as an introduction to scientific design. 
                     The semester project was about preventing roadkills. We tried a lot of different 
                     methodical approaches to gain objective, fact-based insights to solve the problem.
-                    We were researching a lot, created profiles of different types of drivers, 
+                    <img src="./assets/semester03-methodic-01.JPG" 
+                    alt="Photo of my third semester methodical work - shown sketch was not the final concept">
+                    We were researching a lot, created user profiles, 
                     had interviews and even contacted the police to have a face-to-face conversation
                     in order to gather more data that could help us. 
                     In the end we created a project that we saw great chance in for the automotive
@@ -271,11 +256,12 @@
                     that would allow the user to control the speed of a self-made driving simulation. 
                     This simulation showed how our developed system would notify the driver when a wild animal
                     was spotted and how it would react when the driver did not respond accordingly to those
-                    warnings. For this setup of to work I needed server-side programming, which we were introduced
-                    to with NodeJs in this third semester.
                     <img src="./assets/semester03-physical-01.jpg" 
                     alt="Photo of my third semester project physical prototype">
-                    
+                    warnings. For this setup to work I needed server-side programming, which we were introduced
+                    to with NodeJs in this third semester. I also learned how to use packages by 
+                    making use of a library called <a target="blank" href="http://johnny-five.io/">Johnny-Five</a> to use its
+                    serial port to connect my computer to the Arduino.
                 </p>
             </span>
             <span class="projectsection">
